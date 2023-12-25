@@ -1,121 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Page not found</title>
-    <style>
-        /*======================
-        Global Styles
-        =======================*/
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+    }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Verdana', sans-serif;
-        }
+    .container {
+      text-align: center;
+    }
 
-        /*======================
-        404 Page
-        =======================*/
+    h1 {
+      font-size: 8em;
+      margin: 0;
+      color: #dc3545;
+    }
 
-        .page_404 {
-            padding: 40px 0;
-            background: #f0f0f0;
-        }
+    p {
+      font-size: 1.5em;
+      color: #6c757d;
+    }
 
-        .four_zero_four_bg {
-            background-image: url(https://pollrouting.com/e/img/caveman.gif);
-            height: 400px;
-            background-position: center;
-            background-size: cover;
-        }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
 
-        .four_zero_four_bg h1 {
-            font-size: 80px;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
 
-        .four_zero_four_bg h3 {
-            font-size: 40px;
-            color: #333;
-        }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
 
-        .contant_box_404 {
-            margin-top: -50px;
-        }
-
-        .link_404 {
-            color: #fff!important;
-            padding: 12px 24px;
-            background: #3498db;
-            margin: 20px 0;
-            display: inline-block;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .link_404:hover {
-            background: #2980b9;
-        }
-
-        /*======================
-        Responsive Styles
-        =======================*/
-
-        @media screen and (max-width: 768px) {
-            .four_zero_four_bg h1 {
-                font-size: 60px;
-            }
-
-            .four_zero_four_bg h3 {
-                font-size: 30px;
-            }
-
-            .link_404 {
-                padding: 10px 20px;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            .four_zero_four_bg h1 {
-                font-size: 40px;
-            }
-
-            .four_zero_four_bg h3 {
-                font-size: 20px;
-            }
-
-            .link_404 {
-                padding: 8px 16px;
-            }
-        }
-    </style>
+    .animated {
+      animation: bounce 2s infinite;
+    }
+  </style>
 </head>
 <body>
-
-<section class="page_404">
-    <div class="container">
-        <div class="row">    
-            <div class="col-sm-12 ">
-                <div class="col-sm-10 col-sm-offset-1 text-center">
-                    <div class="four_zero_four_bg">
-                        <h1 class="text-center">404</h1>
-                    </div>
-                    <div class="contant_box_404">
-                        <h3 class="h2">Oops! It seems you've wandered off the path.</h3>
-                        <p>The page you are looking for is nowhere to be found!</p>
-                        <a href="https://himangshu.site" class="link_404">Take me Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
+  <div class="container">
+    <h1 class="animated">404</h1>
+    <p>Oops! Page not found.</p>
+    <img src="https://pollrouting.com/e/img/caveman.gif" alt="404 Image">
+    <p>Go back <a href="https://himangshu.site">home</a>.</p>
+  </div>
 </body>
 </html>
