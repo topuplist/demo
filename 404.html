@@ -1,4 +1,102 @@
-<title>404 Page not found</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page not found</title>
+    <style>
+        /*======================
+        Global Styles
+        =======================*/
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Verdana', sans-serif;
+        }
+
+        /*======================
+        404 Page
+        =======================*/
+
+        .page_404 {
+            padding: 40px 0;
+            background: #f0f0f0;
+        }
+
+        .four_zero_four_bg {
+            background-image: url(https://pollrouting.com/e/img/caveman.gif);
+            height: 400px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .four_zero_four_bg h1 {
+            font-size: 80px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .four_zero_four_bg h3 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .contant_box_404 {
+            margin-top: -50px;
+        }
+
+        .link_404 {
+            color: #fff!important;
+            padding: 12px 24px;
+            background: #3498db;
+            margin: 20px 0;
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .link_404:hover {
+            background: #2980b9;
+        }
+
+        /*======================
+        Responsive Styles
+        =======================*/
+
+        @media screen and (max-width: 768px) {
+            .four_zero_four_bg h1 {
+                font-size: 60px;
+            }
+
+            .four_zero_four_bg h3 {
+                font-size: 30px;
+            }
+
+            .link_404 {
+                padding: 10px 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .four_zero_four_bg h1 {
+                font-size: 40px;
+            }
+
+            .four_zero_four_bg h3 {
+                font-size: 20px;
+            }
+
+            .link_404 {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
 
 <section class="page_404">
     <div class="container">
@@ -9,9 +107,9 @@
                         <h1 class="text-center">404</h1>
                     </div>
                     <div class="contant_box_404">
-                        <h3 class="h2">Look like you're lost</h3>
-                        <p>The page you are looking for is not available!</p>
-                        <a href="https://himangshu.site" class="link_404">Go to Home</a>
+                        <h3 class="h2">Oops! It seems you've wandered off the path.</h3>
+                        <p>The page you are looking for is nowhere to be found!</p>
+                        <a href="https://himangshu.site" class="link_404">Take me Home</a>
                     </div>
                 </div>
             </div>
@@ -19,44 +117,5 @@
     </div>
 </section>
 
-<style>
-    /*======================
-    404 page
-    =======================*/
-
-    .page_404 {
-        padding: 40px 0;
-        background: #fff;
-        font-family: 'Arvo', serif;
-    }
-
-    .page_404 img {
-        width: 100%;
-    }
-
-    .four_zero_four_bg {
-        background-image: url(https://pollrouting.com/e/img/caveman.gif);
-        height: 400px;
-        background-position: center;
-    }
-
-    .four_zero_four_bg h1 {
-        font-size: 80px;
-    }
-
-    .four_zero_four_bg h3 {
-        font-size: 80px;
-    }
-
-    .link_404 {
-        color: #fff!important;
-        padding: 10px 20px;
-        background: #39ac31;
-        margin: 20px 0;
-        display: inline-block;
-    }
-
-    .contant_box_404 {
-        margin-top: -50px;
-    }
-</style>
+</body>
+</html>
